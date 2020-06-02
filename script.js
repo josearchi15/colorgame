@@ -45,6 +45,7 @@ function checkSelection(){
     }
     else{
         resultado.innerHTML="Intentar otra vez.";
+        this.style.backgroundColor = "#232332";
     }
 }
 
