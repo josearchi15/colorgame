@@ -6,19 +6,40 @@ body {
     box-sizing: border-box;
 }
 
-.square {
-    width: 30%;
-    background-color: rgb(255, 250, 125);
-    padding-bottom: 30%;
-    float: left;
-    margin: 1.66%;
-    border-radius: 25px;
-}
+
 
 .container {
     margin: 0 auto;
     max-width: 600px;
 }
+
+.square-container {
+    margin: 0 auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.square {
+    width: 30%;
+    padding-bottom: 30%;
+    /* float: left; */
+    margin: 1.66%;
+    border-radius: 25px;
+    display: none;
+}
+
+.square1 {
+    width: 20%;
+    padding-bottom: 30%;
+    /* float: left; */
+    margin: 1.66%;
+    border-radius: 25px;
+    display: none;
+}
+
 h1 {
     color: white;
     text-align: center;
@@ -77,3 +98,5 @@ h1 {
     background-color: white;
     margin: 0 auto;
 }
+
+
