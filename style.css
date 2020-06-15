@@ -131,27 +131,42 @@ h1 {
 .action-menu span{
     padding: 8px 0;
     color: white;
-    /* background-color: white; */
     margin: 0 auto;
     font-size: 12px;
 }
 
 
-/* @media screen and (max-width: 700px) {
-    .container, .container .square-container {
-        margin: 0 auto;
-        max-width: 600px;
+@media screen and (max-width: 700px) {
+
+    .action-menu {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 800;
+        padding: 15px;
+    }
+    .action-menu .container{
+        height: 100%;
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: flex-start;
+        font-size: 12px;
     }
     
-    .square, .square1 {
-        min-height: 100px;
-        min-width: 21%;
+    .niveles {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    
     }
 
-    
-} */
+    #easyBtn {
+        margin-left: 0;
+    }
+}
