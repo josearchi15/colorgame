@@ -11,7 +11,7 @@ let resetBtn = document.querySelector("#resetBtn");
 let resultado = document.getElementsByTagName("span")[1];
 let levels = [ {level: 1, squares: 3, sClas: "square", noClass: "square1"},
                {level: 2, squares: 6, sClas: "square", noClass: "square1"},
-               {level: 3, squares: 12, sClas: "square1", noClass: "square2"}
+               {level: 3, squares: 12, sClas: "square1", noClass: "square"}
 ];
 
 function genColor(){

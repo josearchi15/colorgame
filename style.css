@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     background-color: #232332;
     font-family: Arial, Helvetica, sans-serif;
@@ -14,7 +21,7 @@ body {
 }
 
 .square-container {
-    margin: 0 auto;
+    margin: 5% auto;
     max-width: 600px;
     display: flex;
     flex-direction: row;
@@ -22,22 +29,32 @@ body {
     justify-content: space-around;
 }
 
+.container .square-container {
+    height: 100%;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+
 .square {
     width: 30%;
     padding-bottom: 30%;
-    /* float: left; */
-    margin: 1.66%;
     border-radius: 25px;
     display: none;
+    margin: 2.5% .5%;
 }
 
 .square1 {
-    width: 20%;
+    width: 30%;
     padding-bottom: 30%;
-    /* float: left; */
-    margin: 1.66%;
     border-radius: 25px;
     display: none;
+    margin: 2.5% .5%;
+
 }
 
 h1 {
@@ -50,12 +67,14 @@ h1 {
 }
 
 .action-menu {
-    height: 40px;
-    background-color: white;
+    background-color: rgb(63, 57, 57);
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     font-size: 16px;
     font-weight: 800;
+    padding: 15px;
 }
 .action-menu .container{
     height: 100%;
@@ -63,23 +82,40 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-size: 12px;
 }
 
+
+.niveles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
 .modo {
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid black;
     text-decoration: none;
-    border: none;
-    height: 100%;
     color: #232332;
     background-color: white;
     font-size: 16px;
     font-weight: 800;   
     transition: all 0.3s;
+    box-shadow: 0px 5px black;
 }
-.modo:hover{
+    
+.modo:hover, .modo:active{
+    box-shadow: 0px 3px black;
+    transform: translate(0, 2px);
     color: white;
     background-color:  #232332;
 }
 .level {
+    box-shadow: 0px 3px black;
+    transform: translate(0, 2px);
     color: white;
     background-color:  #232332;
 }
@@ -94,9 +130,28 @@ h1 {
 
 .action-menu span{
     padding: 8px 0;
-    color: #232332;
-    background-color: white;
+    color: white;
+    /* background-color: white; */
     margin: 0 auto;
+    font-size: 12px;
 }
 
 
+/* @media screen and (max-width: 700px) {
+    .container, .container .square-container {
+        margin: 0 auto;
+        max-width: 600px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    
+    .square, .square1 {
+        min-height: 100px;
+        min-width: 21%;
+    }
+
+    
+} */
